@@ -14,14 +14,58 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Checkout Page</title>
   </head>
-  <body class="text-gray-600">
-    <div class="container px-5 py-8">
-      <p class="text-2xl font-semibold">Checkout</p>
-      <div class="bg-gray-100">
-        <div class="flex">
-          <img src="" alt="">
+  <body class="text-gray-600 font-semibold">
+    <div class="container mx-auto px-3 max-w-full overflow-x-hidden">
+      <p class="text-2xl pt-8 pb-4 px-2">Checkout</p>
+      <div class="bg-gray-100 pt-7 pb-3 px-6 rounded-xl">
+        <div class="flex mb-7">
+          <img src="images/photo1.webp" class="w-32 h-32 rounded-xl" alt="" />
+          <div class="flex flex-col justify-between ml-5">
+            <div>
+              <p class="text-xs mb-2">Vintage Backbag</p>
+              <div class="flex items-center">
+                <p class="text-sm mr-3 text-orange-400">$54.99</p>
+                <p class="text-xs line-through">$94.99</p>
+              </div>
+            </div>
+            <div
+              class="flex w-28 h-12 justify-around items-center rounded-xl border border-gray-400"
+            >
+              <button class="bg-gray-200 w-5 h-5 rounded">-</button>
+              <p>1</p>
+              <button class="bg-gray-200 w-5 h-5 rounded">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex mb-7">
+          <img src="images/photo2.webp" class="w-32 h-32 rounded-xl" alt="" />
+          <div class="flex flex-col justify-between ml-5">
+            <div>
+              <p class="text-xs mb-2">Levi Shoes</p>
+              <div class="flex items-center">
+                <p class="text-sm mr-3 text-orange-400">$74.99</p>
+                <p class="text-xs line-through">$124.99</p>
+              </div>
+            </div>
+            <div
+              class="flex w-28 h-12 justify-around items-center rounded-xl border border-gray-400"
+            >
+              <button class="bg-gray-200 w-5 h-5 rounded">-</button>
+              <p>1</p>
+              <button class="bg-gray-200 w-5 h-5 rounded">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between py-2 border-t border-gray-300 mt-20">
+          <p class="text-sm">Shipping</p>
+          <p class="text-sm">$19</p>
+        </div>
+        <div class="flex justify-between py-2 border-t border-gray-300">
+          <p class="text-sm">Total</p>
+          <p class="text-sm">$148.98</p>
         </div>
       </div>
+      
     </div>
   </body>
 </html>
