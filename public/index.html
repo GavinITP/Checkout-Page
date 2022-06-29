@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="../fonts/montserrat-v24-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../src/images/devchallenges.png"
+    />
+    <title>Checkout Page</title>
+  </head>
+  <body class="text-gray-600 font-semibold">
+    <div
+      class="container mx-auto px-[5%] max-w-full overflow-x-hidden md:px-[7%] lg:px-[13%]"
+    >
+      <p class="text-2xl pt-8 pl-2 md:pl-0 md:text-4xl">Checkout</p>
+      <div class="grid md:grid-cols-2 md:gap-[5%] lg:gap-[10%]">
+        <div>
+          <div class="bg-gray-100 pt-7 pb-3 px-[10%] mt-5 md:mt-16 rounded-xl">
+            <div class="flex mb-7">
+              <img
+                src="images/photo1.webp"
+                class="w-1/2 max-w-[8rem] aspect-square rounded-xl"
+                alt=""
+              />
+              <div class="flex flex-col justify-between ml-5">
+                <div>
+                  <p class="text-xs mb-2 md:text-base">Vintage Backbag</p>
+                  <div class="flex items-center">
+                    <p class="text-sm mr-3 text-orange-400 md:text-base">
+                      $54.99
+                    </p>
+                    <p class="text-xs line-through">$94.99</p>
+                  </div>
+                </div>
+                <div
+                  class="flex max-w-[7rem] h-12 justify-around items-center rounded-xl border border-gray-400"
+                >
+                  <button class="bg-gray-200 w-5 h-5 rounded">-</button>
+                  <p>1</p>
+                  <button class="bg-gray-200 w-5 h-5 rounded">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="flex mb-7">
+              <img
+                src="images/photo2.webp"
+                class="w-1/2 max-w-[8rem] rounded-xl"
+                alt=""
+              />
+              <div class="flex flex-col justify-between ml-5">
+                <div>
+                  <p class="text-xs mb-2 md:text-base">Levi Shoes</p>
+                  <div class="flex items-center">
+                    <p class="text-sm mr-3 text-orange-400 md:text-base">
+                      $74.99
+                    </p>
+                    <p class="text-xs line-through">$124.99</p>
+                  </div>
+                </div>
+                <div
+                  class="flex max-w-[7rem] h-12 justify-around items-center rounded-xl border border-gray-400"
+                >
+                  <button class="bg-gray-200 w-5 h-5 rounded">-</button>
+                  <p>1</p>
+                  <button class="bg-gray-200 w-5 h-5 rounded">+</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-between py-2 border-t border-gray-300 mt-20"
+            >
+              <p class="text-sm md:text-lg">Shipping</p>
+              <p class="text-sm">$19</p>
+            </div>
+            <div class="flex justify-between py-2 border-t border-gray-300">
+              <p class="text-sm md:text-lg">Total</p>
+              <p class="text-sm">$148.98</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:-order-1">
+          <h2 class="mt-10 text-sm md:text-lg">Contact information</h2>
+          <form>
+            <div class="flex flex-col">
+              <label class="text-xs mt-3 mb-1">E-mail</label>
+              <div class="flex h-10 pr-3 border rounded-xl border-gray-400">
+                <img src="icons/email.svg" alt="" class="mx-3 w-4" />
+                <input
+                  type="email"
+                  placeholder="Enter your email..."
+                  maxlength="30"
+                  required
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
+                />
+              </div>
+              <label class="text-xs mt-3 mb-1">Phone</label>
+              <div class="flex h-10 pr-3 border rounded-xl border-gray-400">
+                <img src="icons/phone.svg" alt="" class="mx-3 w-4" />
+                <input
+                  type="tel"
+                  placeholder="Enter your phone..."
+                  maxlength="10"
+                  required
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
+                />
+              </div>
+            </div>
+            <h2 class="mt-10 text-sm">Shipping address</h2>
+            <div class="flex flex-col">
+              <label class="text-xs mt-3 mb-1">Full name</label>
+              <div class="flex h-10 pr-3 border rounded-xl border-gray-400">
+                <img src="icons/account.svg" alt="" class="mx-3 w-4" />
+                <input
+                  type="text"
+                  placeholder="Your name.."
+                  maxlength="30"
+                  required
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
+                />
+              </div>
+              <label class="text-xs mt-3 mb-1">Address</label>
+              <div class="flex h-10 pr-3 border rounded-xl border-gray-400">
+                <img src="icons/home.svg" alt="" class="mx-3 w-4" />
+                <input
+                  type="text"
+                  placeholder="Your address.."
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <label class="text-xs mt-3 mb-1">City</label>
+              <div class="flex h-10 pr-3 border rounded-xl border-gray-400">
+                <img src="icons/location.svg" alt="" class="mx-3 w-4" />
+                <input
+                  type="text"
+                  placeholder="Your city.."
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <div class="grid grid-cols-2 gap-6 my-3">
+                <div>
+                  <label class="text-xs mt-3 mb-1">Country</label>
+                  <div
+                    class="flex h-10 pr-3 border rounded-xl border-gray-400 overflow-hidden"
+                  >
+                    <img src="icons/location.svg" alt="" class="mx-3 w-4" />
+                    <select
+                      name="Country"
+                      id="Country"
+                      class="w-full outline-none text-xs md:text-base"
+                    >
+                      <option disabled selected value>Your country..</option>
+                      <option value="United States">United States</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="France">France</option>
+                      <option value="Spain">Spain</option>
+                      <option value="China">China</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label class="text-xs mt-3 mb-1">Postal code</label>
+                  <div
+                    class="flex h-10 pr-3 border rounded-xl border-gray-400 overflow-hidden"
+                  >
+                    <img src="icons/mailbox.svg" alt="" class="mx-3 w-4" />
+                    <input
+                      type="text"
+                      placeholder="Your postal code.."
+                      class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex mt-2 mb-6">
+                <input type="checkbox" id="save" name="save" value="true" />
+                <label class="ml-2 text-xs"
+                  >Save this information for next time</label
+                >
+              </div>
+              <button
+                class="w-40 h-14 rounded-xl bg-orange-400 text-white right self-end"
+              >
+                Continue
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <p class="text-sm text-gray-400 text-center mt-24 mb-5">
+        created by
+        <a href="https://github.com/GavinITP" class="underline">GavinITP</a> -
+        devChallenges.io
+      </p>
+    </div>
+  </body>
+</html>
