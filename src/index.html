@@ -18,7 +18,7 @@
     <div
       class="container mx-auto px-3 max-w-full overflow-x-hidden md:px-16 lg:px-32"
     >
-      <p class="text-2xl pt-8 pl-2 md:pl-0">Checkout</p>
+      <p class="text-2xl pt-8 pl-2 md:pl-0 md:text-4xl">Checkout</p>
       <div class="grid md:grid-cols-2 md:gap-12 lg:gap-28">
         <div>
           <div class="bg-gray-100 pt-7 pb-3 px-6 mt-5 md:mt-16 rounded-xl">
@@ -30,9 +30,11 @@
               />
               <div class="flex flex-col justify-between ml-5">
                 <div>
-                  <p class="text-xs mb-2">Vintage Backbag</p>
+                  <p class="text-xs mb-2 md:text-base">Vintage Backbag</p>
                   <div class="flex items-center">
-                    <p class="text-sm mr-3 text-orange-400">$54.99</p>
+                    <p class="text-sm mr-3 text-orange-400 md:text-base">
+                      $54.99
+                    </p>
                     <p class="text-xs line-through">$94.99</p>
                   </div>
                 </div>
@@ -53,9 +55,11 @@
               />
               <div class="flex flex-col justify-between ml-5">
                 <div>
-                  <p class="text-xs mb-2">Levi Shoes</p>
+                  <p class="text-xs mb-2 md:text-base">Levi Shoes</p>
                   <div class="flex items-center">
-                    <p class="text-sm mr-3 text-orange-400">$74.99</p>
+                    <p class="text-sm mr-3 text-orange-400 md:text-base">
+                      $74.99
+                    </p>
                     <p class="text-xs line-through">$124.99</p>
                   </div>
                 </div>
@@ -71,17 +75,17 @@
             <div
               class="flex justify-between py-2 border-t border-gray-300 mt-20"
             >
-              <p class="text-sm">Shipping</p>
+              <p class="text-sm md:text-lg">Shipping</p>
               <p class="text-sm">$19</p>
             </div>
             <div class="flex justify-between py-2 border-t border-gray-300">
-              <p class="text-sm">Total</p>
+              <p class="text-sm md:text-lg">Total</p>
               <p class="text-sm">$148.98</p>
             </div>
           </div>
         </div>
         <div class="md:-order-1">
-          <h2 class="mt-10 text-sm">Contact information</h2>
+          <h2 class="mt-10 text-sm md:text-lg">Contact information</h2>
           <form>
             <div class="flex flex-col">
               <label class="text-xs mt-3 mb-1">E-mail</label>
@@ -92,7 +96,7 @@
                   placeholder="Enter your email..."
                   maxlength="30"
                   required
-                  class="w-full placeholder:text-xs outline-none text-xs"
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
                 />
               </div>
               <label class="text-xs mt-3 mb-1">Phone</label>
@@ -103,7 +107,7 @@
                   placeholder="Enter your phone..."
                   maxlength="10"
                   required
-                  class="placeholder:text-xs outline-none text-xs"
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
                 />
               </div>
             </div>
@@ -117,7 +121,7 @@
                   placeholder="Your name.."
                   maxlength="30"
                   required
-                  class="w-full placeholder:text-xs outline-none text-xs"
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
                 />
               </div>
               <label class="text-xs mt-3 mb-1">Address</label>
@@ -126,7 +130,7 @@
                 <input
                   type="text"
                   placeholder="Your address.."
-                  class="w-full placeholder:text-xs outline-none text-xs"
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
                   maxlength="100"
                   required
                 />
@@ -137,7 +141,7 @@
                 <input
                   type="text"
                   placeholder="Your city.."
-                  class="w-full placeholder:text-xs outline-none text-xs"
+                  class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
                   maxlength="30"
                   required
                 />
@@ -152,7 +156,7 @@
                     <select
                       name="Country"
                       id="Country"
-                      class="w-full outline-none text-xs"
+                      class="w-full outline-none text-xs md:text-base"
                     >
                       <option disabled selected value>Your country..</option>
                       <option value="United States">United States</option>
@@ -172,7 +176,7 @@
                     <input
                       type="text"
                       placeholder="Your postal code.."
-                      class="w-full placeholder:text-xs outline-none text-xs"
+                      class="w-full placeholder:text-xs outline-none text-xs md:placeholder:text-base"
                       maxlength="10"
                       required
                     />
